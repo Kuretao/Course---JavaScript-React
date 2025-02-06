@@ -1,12 +1,21 @@
 "use strict";
 
-let storeName = 'store';
-const storeDescription = {
-    budget: 10000,
-    employees: ['Bogdan', 'Misha', 'Denis'],
-    products: {
-        apple: 150,
-        tomato: 200
+const numberOfFilms = prompt("Сколько фильмов вы уже посмотрели?", "");
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies:{
+
     },
-    open: false,
+    actors:{},
+    genres: [],
+    privat: false,
 }
+
+const a = prompt("один из просмотренных фильмов?", ""),
+    b = prompt("На сколько оцентите его?", "");
+
+personalMovieDB.movies[a] = b;
+
+console.log(personalMovieDB)
+
+
